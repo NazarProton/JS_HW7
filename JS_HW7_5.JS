@@ -1,0 +1,12 @@
+// Задание 5
+// Напиши скрипт который, при наборе текста в инпуте 
+// input#name-input (событие input), 
+// подставляет его текущее значение в span#name-output.
+//  Если инпут пустой, в спане должна отображаться строка 'незнакомец'.
+var inputRef = document.querySelector('#name-input'),
+    spanRef = document.querySelector('#name-output');
+console.log(inputRef);
+inputRef.addEventListener("input", () => {
+    spanRef.innerHTML = inputRef.value;
+    
+  });
